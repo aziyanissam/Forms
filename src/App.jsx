@@ -6,11 +6,19 @@ import AddFoodForm from './Components/AddFoodForm';
 function App() {
   const [food, setFood] = useState(foods);
 
+
+  const addNewFood = (newItem) => {
+    const updatedFood = [...food, newItem];
+    setFood(updatedFood)
+  }
+
   return (
     <div className="App">
-      <AddFoodForm />
+      <AddFoodForm addNewFood={addNewFood}
+      />
       <FoodBox
         food={food}
+
       />
     </div>
   )

@@ -9,7 +9,7 @@ function FoodBox({ food }) {
                     <img src={item.image} alt="" style={{ width: '100px' }} />
                     <h4>Calories: {item.calories}</h4>
                     <h4>Servings: {item.servings}</h4>
-                    <h3>Total Calories: {item.calories}</h3>
+                    <h3>Total Calories: {item.calories} kcal</h3>
                     <button>Delete</button>
                 </div>
             ))
